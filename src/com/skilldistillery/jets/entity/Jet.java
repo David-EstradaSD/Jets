@@ -2,6 +2,8 @@ package com.skilldistillery.jets.entity;
 
 public abstract class Jet {
 
+	// Don’t forget to be careful on shadowing variables and this. I might have got
+	// confused for a moment
 	private String model;
 	private double speed;
 	private int range;
@@ -12,11 +14,55 @@ public abstract class Jet {
 	}
 
 	public Jet(String model, double speed, int range, long price) {
-		super();
 		this.model = model;
 		this.speed = speed;
 		this.range = range;
 		this.price = price;
+	}
+	
+	public void fly() {
+		double flightTime = (range / speed);
+		System.out.printf("model: " + model + ", speed (mph): " + speed + ", range (miles): " + range + ", price ($): " + price 
+				+ ", flight time (hours): %.2f", flightTime );
+		System.out.println();
+		
+		
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((model == null) ? 0 : model.hashCode());
+		result = prime * result + (int) (price ^ (price >>> 32));
+		result = prime * result + range;
+		long temp;
+		temp = Double.doubleToLongBits(speed);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Jet other = (Jet) obj;
+		if (model == null) {
+			if (other.model != null)
+				return false;
+		} else if (!model.equals(other.model))
+			return false;
+		if (price != other.price)
+			return false;
+		if (range != other.range)
+			return false;
+		if (Double.doubleToLongBits(speed) != Double.doubleToLongBits(other.speed))
+			return false;
+		return true;
 	}
 
 	public String getModel() {
@@ -49,6 +95,11 @@ public abstract class Jet {
 
 	public void setPrice(long price) {
 		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Jet: model: " + model + ", speed: " + speed + ", range: " + range + ", price: " + price;
 	}
 
 }
