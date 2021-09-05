@@ -52,6 +52,7 @@ public class JetsApplication {
 				System.out.println("2) StealthJet");
 				System.out.println("3) Airliner");
 				int choiceOfJet = sc.nextInt();
+				sc.nextLine();
 				System.out.print("Please enter the jet's model: ");
 				String model = sc.next();
 				System.out.print("Please enter the jet's speed(mph): ");
@@ -74,6 +75,7 @@ public class JetsApplication {
 				System.err.println("Invalid entry! Select option 1 - 9");
 			}
 		}
+		sc.close();
 	}
 
 	public void printMenu() {

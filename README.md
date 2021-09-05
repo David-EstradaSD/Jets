@@ -1,23 +1,21 @@
-# Jets Application
+# _Jets Application_
 
-#### Overview
-This program simulates a Jet application wherein Jets are populated into a virtual airfield, in which the user can interact with. Initially, the airfield consists of jets from an existing text file, but may be further manipulated through user input.
+### Overview
+This application simulates a Jet fleet that the user can interact with. Initially, the airfield's populated by reading from a text file, but may be further manipulated through user input ( full _C.R.U.D._ functionality )
 
-#### Technical Skills Used
-* Java and Eclipse IDE
-* Encapsulation (getter and setter methods)
-* Collection (Lists and Sets)
-* Polymorphism (instanceof() method) / Inheritance
-* Constructor methods
-* Switch statements
-* If/Else statements
-* For loops and while loops
+### Technologies
+* Java
+* OOP Principles: Encapsulation, Abstraction, Polymorphism & Inheritance
+* Collections ( _ArrayList_ )
+* Conditionals & loops
 * BufferedReader / FileReader
-* User input with Scanner
+* Java's Scanner ( _user interaction_ )
 
-#### How to Run
-This program runs on Eclipse and requires user input for menu selection through a keyboard.
+### How to Run
+You'll need a basic editor ( Eclipse, VS Code ) with installed extensions for JDK ( _Java_ ). Then Git Clone the source code into a file ( _usually done through your local terminal_ ). Open the saved file in your editor and access the Console tab ( _Eclipse_ ) or Terminal window ( _VS Code_ ) and run the application as a Java app. CRUD ( _Create / Read / Update / Delete_ ) functionality is
+and then access the requires user input for menu selection through a keyboard.
+###### tl;dr
+Any IDE with JDK installed and a CLI
 
-#### Lessons Learned
-I have learned how Polymorphism and Inheritance coexist and we cannot have the former without the latter. I became more comfortable with the instanceof() operator to use a superclass's methods to perform a task for its subclass, as well as the BufferedReader and FileReader to utilize a text file's data for a Java application.
-
+### Lessons Learned
+One of my 1st projects, _Jets_ drilled-in key OOP concepts of Polymorphism and Inheritance; how they coexist and we cannot have the former without the latter. This app's very basic with _BufferedReader_ and _FileReader_ but it emphasize's the fundamentals & significance of _collection_ (accessing data) and separation of concerns.
