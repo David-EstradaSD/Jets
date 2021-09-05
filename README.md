@@ -12,8 +12,7 @@ This application simulates a Jet fleet that the user can interact with. Initiall
 * Java's Scanner ( _user interaction_ )
 
 ### How to Run
-You'll need a basic editor ( Eclipse, VS Code ) with installed extensions for JDK ( _Java_ ). Then Git Clone the source code into a file ( _usually done through your local terminal_ ). Open the saved file in your editor and access the Console tab ( _Eclipse_ ) or Terminal window ( _VS Code_ ) and run the application as a Java app. CRUD ( _Create / Read / Update / Delete_ ) functionality is
-and then access the requires user input for menu selection through a keyboard.
+You'll need a basic editor ( Eclipse, VS Code ) with installed extensions for JDK ( _Java_ ). Then Git Clone the source code into a file ( _usually done through your local terminal_ ). Open the saved file in your editor and access the Console tab ( _Eclipse_ ) or Terminal window ( _VS Code_ ) and run the application as a Java app. CRUD ( _Create / Read / Update / Delete_ ) functionality is performed by user input for menu selection through a keyboard.
 ###### tl;dr
 Any IDE with JDK installed and a CLI
 
