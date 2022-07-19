@@ -17,4 +17,4 @@ You'll need a basic editor ( Eclipse, VS Code ) with installed extensions for JD
 Any IDE with JDK installed and a CLI
 
 ### Lessons Learned
-One of my 1st projects, _Jets_ drilled-in key OOP concepts of Polymorphism and Inheritance; how they coexist and we cannot have the former without the latter. This app's very basic with _BufferedReader_ and _FileReader_ but it emphasize's the fundamentals & significance of _collection_ (accessing data) and separation of concerns.
+One of my 1st projects, _Jets_ drilled-in key OOP concepts of Polymorphism and Inheritance; how they coexist and we cannot have the former without the latter. This app's very basic with _Scanner_, _BufferedReader_ and _FileReader_ but it emphasize's the fundamentals & significance of _collection_ (accessing data) and separation of concerns.
